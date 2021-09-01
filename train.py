@@ -41,7 +41,7 @@ def train(file_url, save_model = False):
     print(classification_report(y_test, y_pred, target_names=my_tags))
     if save_model:
         # save the classifier
-        with open('naive_bayes_classifier.pkl', 'wb') as fid:
+        with open('output/naive_bayes_classifier.pkl', 'wb') as fid:
             pickle.dump(nb, fid)
 
     return nb
